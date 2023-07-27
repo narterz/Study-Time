@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;1,400&family=Exo:ital,wght@0,300;0,700;1,200&family=Indie+Flower&family=Inter:wght@700&family=Kanit:ital,wght@1,300;1,400&family=Raleway:ital,wght@0,200;0,300;1,100;1,600&family=Righteous&family=Wix+Madefor+Text:ital,wght@0,400;0,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    
+    h1 {
+        @apply text-xxl font-bold
+    }
+
+    h2 {
+        @apply text-xl
+    }
+    
+    h3 {
+        @apply text-lg
+    }
+
+    p {
+        @apply text-md
+    }    
+}
+
+@layer components {
+
+    button {
+        @apply font-semibold text-xsm border border-transparent rounded-lg hover:opacity-70 transition-all delay-150 ease-in outline-none
+    }
+
+    .todo-progress {
+        @apply sm:text-toDoLg xl:text-xxsm xxl:text-xsm text-center font-semibold
+    }
+
+    .todo-btns {
+        @apply  sm:text-toDoLg md:text-xxsm lg:text-xsm
+    }
+}
+
+#add-todo {
+    border: 3px dashed #fff;
+}
+
+#vertical {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+
+#addTask {
+    transition: height 250ms ease-in;
+}
+
+
